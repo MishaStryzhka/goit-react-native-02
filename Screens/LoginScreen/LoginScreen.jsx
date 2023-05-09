@@ -56,7 +56,7 @@ const LoginScreen = ({ toggleRegistered }) => {
 
             <Text style={styles.titel}>Войти</Text>
             <TextInput
-                value={email}
+                value={email.value}
                 onChangeText={emailHandler}
                 placeholder="Адрес электронной почты"
                 style={email.is ? styles.input : styles.inputEror}
@@ -64,7 +64,7 @@ const LoginScreen = ({ toggleRegistered }) => {
             />
             <View>
                 <TextInput
-                    value={password}
+                    value={password.value}
                     onChangeText={passwordHandler}
                     placeholder="Пароль"
                     style={password.is ? styles.input : styles.inputEror}
